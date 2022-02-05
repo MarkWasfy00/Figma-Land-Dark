@@ -1,0 +1,58 @@
+@import '../Reusable/Variables';
+
+
+
+.footer-content-wrap{
+    grid-column: span 4;
+    color: $light-text;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    border-top: 1px solid #343434;
+    @include media(laptop){
+        flex-direction: row;
+        justify-content: space-between;
+        margin-block: 5rem;
+        
+    }
+    .block{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        & > div{
+            &:hover{
+                color: $primary;
+                cursor: pointer;
+            }
+        }
+    }
+    .social{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        .contact{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            i{
+                font-size: 1.5rem;
+                
+            }
+        }
+        .media{
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            i{
+                font-size: 3rem;
+                transition: .5s;
+                &:hover{
+                    color: $primary;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+}

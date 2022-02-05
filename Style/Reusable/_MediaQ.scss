@@ -1,0 +1,17 @@
+
+@mixin media($dimension) {
+    @if $dimension == tablet {
+        @media (min-width:46.875em){
+            @content;
+        }
+    }@else if $dimension == laptop  {
+        @media (min-width:60.625em){
+            @content;
+        }
+    }@else if $dimension == desktop {
+        @media (min-width:75em){
+            @content;
+        }
+    }
+    
+}

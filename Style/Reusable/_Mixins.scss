@@ -1,0 +1,33 @@
+
+@mixin flex($direction,$justfiy,$align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justfiy;
+    align-items: $align;
+}
+
+
+
+@mixin flexrow($justfiy,$align) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justfiy;
+}
+
+@mixin flexcol-only {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+@mixin flexrowalign($align) {
+    display: flex;
+    align-items: $align;
+}
+
+@mixin flexcolalign($align) {
+    display: flex;
+    flex-direction: column;
+    align-items: $align;
+}

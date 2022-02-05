@@ -1,0 +1,57 @@
+@import '../Reusable/Variables';
+@import '../Reusable/MediaQ';
+
+.features-content-wrap{
+    grid-column: span 4;
+    text-align: center;
+    color: $light-text;
+    .features-content{
+        margin-top: 2rem;
+        @include flexcol-only;
+        gap: 3rem;
+        @include media(laptop){
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .chart{
+            position: relative;
+            @include media(laptop){
+                max-width: 50rem;
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                background-image: url(../../Static/imgs/LineChart.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 25rem;
+                height: 20rem;
+                bottom: -3rem;
+                left: 50%;
+                transform: translateX(-50%);
+                @include media(laptop){
+                    left: 75%;
+                }
+            }
+        }
+        .feature-template{
+            @include flexcol-only;
+            gap: 4rem;
+            .features-block{
+                @include flexcol-only;
+                gap: 1rem;
+                text-align: left;
+                width: 25rem;
+                margin: 0 auto;
+                .top{
+                    @include flexrowalign(center);
+                    gap: 1rem;
+                    .vector{
+                        width: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,78 @@
+@import './MediaQ';
+
+@font-face{
+    font-family: Graphik-M;
+    src: url(../Static/Fonts/GraphikMedium.otf);
+}
+
+@font-face{
+    font-family: Graphik-R;
+    src: url(../Static/Fonts/GraphikRegular.otf);
+}
+
+
+
+.headline{
+    font-size: 8rem;
+    font-family: Graphik-M;
+}
+
+.second-headline{
+    margin-top: 8rem;
+    font-size: 5.2rem;
+    font-family: Graphik-R;
+    
+}
+
+
+.title{
+    font-size: 2rem;
+    font-family: Graphik-M;
+    line-height: 3rem;
+}
+
+
+.sub-heading{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-family: Graphik-R;
+    line-height: 3rem;
+    padding-inline: 3rem;
+    @include media(laptop){
+        padding-inline: 35rem;
+    }
+}
+
+.headline{
+    font-size: 8rem;
+    font-family: Graphik-M;
+}
+
+
+.btn-font {
+    font-size: 1.7rem;
+    font-family: Graphik-M;
+}
+
+.subtitle {
+    font-size: 1.6rem;
+    font-family: Graphik-M;
+}
+
+
+.paragraph {
+    font-size: 1.6rem;
+    font-family: Graphik-R;
+    line-height: 2.4rem;
+}
+
+
+.link{
+    font-size: 1.6rem;
+    font-family: Graphik-M;
+}
+
+.mobile-menu{
+    font-size: 3rem;
+    font-family: Graphik-R;
+}

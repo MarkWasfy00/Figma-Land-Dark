@@ -1,0 +1,39 @@
+@import '../Reusable/Variables';
+
+
+
+.font-content-wrap{
+    grid-column: span 4;
+    text-align: center;
+    color: $light-text;
+    @include media(desktop){
+        background-color: #343434;
+        border-radius: 5rem;
+        height: 30rem;
+        display: flex;
+        justify-content: center;
+        text-align: left;
+        padding: 0 4rem;
+        overflow: hidden;
+        
+    }
+    .font-heading{
+        .second-headline{
+            margin-bottom: 2rem;
+        }
+
+        
+    }
+
+    
+    img{
+        @include media(desktop){
+            width: 50rem;
+            
+            object-fit: cover;
+        }
+        width: 30rem;
+        margin: 2rem auto;
+        
+    }
+}

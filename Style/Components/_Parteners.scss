@@ -1,0 +1,27 @@
+
+
+
+
+.partner-content-wrap{
+
+    grid-column: span 4;
+    text-align: center;
+    color: $light-text;
+    .sponser{
+        width: 25rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin: 3rem auto;
+        @include media(laptop){
+            flex-wrap: nowrap;
+            justify-content: center;
+            gap: 4rem;
+        }
+        img{
+            width: auto;
+            object-fit: contain;
+        }
+    }
+}

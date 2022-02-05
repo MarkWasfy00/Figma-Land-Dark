@@ -1,0 +1,36 @@
+@import '../Reusable/Variables';
+
+
+.testimonial-content-wrap{
+    grid-column: span 4;
+    text-align: center;
+    color: $light-text;
+    .testimonial-content{
+        @include media(laptop){
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .testimonial-card{
+            border: 1px solid #565656;
+            padding: 2rem;
+            text-align: left;
+            width: 40rem;
+            margin: 3rem auto;
+            @include media(laptop){
+                margin: 0;
+                
+            }
+            .user{
+                display: flex;
+                gap: 2rem;
+                align-items: center;
+                margin-bottom: 2rem;
+            }
+        }
+
+    }
+}

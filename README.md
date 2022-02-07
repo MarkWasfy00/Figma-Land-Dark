@@ -6,4 +6,4 @@
 
 
 ### Photo of the site:
-![alt text](.Static/imgs/Figma-Land.png)
+![alt text](https://github.com/Markizzo/Figma-Land-Dark/blob/main/Static/imgs/Figma-Land.png)

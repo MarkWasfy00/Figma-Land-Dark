@@ -316,6 +316,12 @@ main {
   height: 40rem;
 }
 
+@media (min-width: 75em) {
+  .hero .row .hero-content-wrap .screen {
+    height: 60rem;
+  }
+}
+
 .features-content-wrap {
   grid-column: span 4;
   text-align: center;

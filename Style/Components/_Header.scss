@@ -107,6 +107,9 @@
                 background-position: center top;
                 background-repeat: no-repeat;
                 height: 40rem;
+                @include media(desktop){
+                    height: 60rem;
+                }
                 
             }
         }

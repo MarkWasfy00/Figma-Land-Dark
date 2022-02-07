@@ -568,6 +568,10 @@ main {
   color: #FFFFFF;
 }
 
+.testimonial-content-wrap .testimonial-content {
+  padding: 2rem;
+}
+
 @media (min-width: 60.625em) {
   .testimonial-content-wrap .testimonial-content {
     display: -webkit-box;
@@ -587,13 +591,13 @@ main {
   border: 1px solid #565656;
   padding: 2rem;
   text-align: left;
-  width: 40rem;
   margin: 3rem auto;
 }
 
 @media (min-width: 60.625em) {
   .testimonial-content-wrap .testimonial-content .testimonial-card {
     margin: 0;
+    width: 40rem;
   }
 }
 

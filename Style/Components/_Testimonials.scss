@@ -6,6 +6,7 @@
     text-align: center;
     color: $light-text;
     .testimonial-content{
+        padding: 2rem;
         @include media(laptop){
             display: flex;
             justify-content: center;
@@ -18,11 +19,11 @@
             border: 1px solid #565656;
             padding: 2rem;
             text-align: left;
-            width: 40rem;
+            
             margin: 3rem auto;
             @include media(laptop){
                 margin: 0;
-                
+                width: 40rem;
             }
             .user{
                 display: flex;
